@@ -7,10 +7,12 @@ console.log('***** Function Practice *****')
 // 1. Function to return 'Hello World!'
 
 function hello() {
+  console.log ( 'Question 1' );
+  //I added this cosole.log (and will add to each function as shown on the
+  // Functions Pratical video in this weeks lesson) to ensure I'm in the
+  //correct function, and to make the console more understandable when viewed.
   return 'Hello World!';
 }
-
-hello();
 
 // Call the function to test
 //console.log('Test - should say "Hello World!"', hello());
@@ -20,57 +22,68 @@ console.log( 'Test - ', hello() );
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 
 function helloName(name) {
-  return 'person reviewing my homework!';
+  console.log ( 'Question 2' );
+  return `Hello, ${name}!`;
 }
-
-helloName();
 
 // Remember to call the function to test
 
-console.log( 'Test - Hello,', helloName() );
+console.log( 'Test - ', helloName('JJ') );
 
 // 3. Function to add two numbers together & return the result
-function addNumbers() {
-  let answer = 7 + 3;
+function addNumbers(num0, num1 ) {
+  console.log ( 'Question 3' );
+  let answer = num0 + num1;
   return answer;
   // return firstNumber + secondNumber;
 }
 
-console.log( 'Test - ', addNumbers() );
+console.log( 'Test adding numbers 3 & 7 -', addNumbers( 3, 7 ) );
+
 // 4. Function to multiply three numbers & return the result
-function multiplyThree() {
-  let answer = 7 * 3 * 21;
+function multiplyThree( num0, num1, num2) {
+  let answer = num0 * num1 * num2;
   return answer;
 }
 
-console.log ( 'Test -', multiplyThree() );
+console.log ( 'Test multipling three numbers 3, 7 & 21 -', multiplyThree( 3, 7, 21 ) );
 // 5. Function that will return true if a number is positive,
 //    or greater than zero, and false otherwise
 function isPositive( number ) {
   if ( number > 0 ){
-    return;
+    return true;
   }
-    return;
+  else
+    return false;
 }
+
 // Call the function to test each outcome (true & false)
 // Write a separate console.log statement for each outcome
-//*console.log( 'isPositive - should say true', isPositive(3) );
-//*console.log( 'isPositive - should say false', isPositive(0) );
-//*console.log( 'isPositive - should say false', isPositive(-3) );
+console.log( 'isPositive - should say true', isPositive(3) );
+console.log( 'isPositive - should say false', isPositive(0) );
+console.log( 'isPositive - should say false', isPositive(-3) );
 
 
 // 6. Function to return the _last_ item in an array. If the
 //    array is empty, return `undefined`.
+
+let animalArray = ['lion', 'tigers', 'bears']
+
 function getLast( array ) {
+  return array[animalArray.length -1];
 
 }
 
+getLast();
+
+console.log( 'Last animal:', getLast() );
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
-function find( value, array ){
-
-}
+//function find( value, array ){
+//  let find = false;
+//  for
+//}
 
 // ----------------------
 // Stretch Goals
