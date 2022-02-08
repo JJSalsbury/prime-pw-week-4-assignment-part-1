@@ -27,20 +27,23 @@ helloName();
 
 // Remember to call the function to test
 
-console.log( 'Test - Hello, ', helloName() );
+console.log( 'Test - Hello,', helloName() );
 
 // 3. Function to add two numbers together & return the result
-function addNumbers( firstNumber ) {
+function addNumbers() {
+  let answer = 7 + 3;
+  return answer;
   // return firstNumber + secondNumber;
 }
 
-
+console.log( 'Test - ', addNumbers() );
 // 4. Function to multiply three numbers & return the result
-function multiplyThree( ){
-
+function multiplyThree() {
+  let answer = 7 * 3 * 21;
+  return answer;
 }
 
-
+console.log ( 'Test -', multiplyThree() );
 // 5. Function that will return true if a number is positive,
 //    or greater than zero, and false otherwise
 function isPositive( number ) {
