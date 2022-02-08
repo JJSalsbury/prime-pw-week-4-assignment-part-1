@@ -6,8 +6,7 @@ console.log('***** Function Practice *****')
 
 // 1. Function to return 'Hello World!'
 
-function hello(){
-  console.log( 'in hello' );
+function hello() {
   return 'Hello World!';
 }
 
@@ -19,17 +18,16 @@ console.log( 'Test - ', hello() );
 
 // 2. Function to return a personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
+
 function helloName(name) {
-  console.log( 'In helloName' );
-  console.log( 'Hello, ' + name );
-  return true;
+  return 'person reviewing my homework!';
 }
 
-helloName('person reviewing my homework!');
+helloName();
 
 // Remember to call the function to test
 
-console.log( 'Test - ', helloName() );
+console.log( 'Test - Hello, ', helloName() );
 
 // 3. Function to add two numbers together & return the result
 function addNumbers( firstNumber ) {
