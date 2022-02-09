@@ -19,7 +19,7 @@ console.log( 'Test - ', hello() );
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 
 function helloName(name) {
-  return `Hello, ${name}!`;
+  return 'Hello, ' + name;
 }
 
 // Remember to call the function to test
