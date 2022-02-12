@@ -120,18 +120,17 @@ console.log ( 'Test - Sum of array should = 31:', sumAll([ 3, 7, 21 ]));
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
-function newArray( array ) {
-  let emptyArray = [];
-  for (let i=0; i < array.length; i++) {
-    if (array[i] > 0) {
-      emptyArray.push(array[i]);
-    }
+function inputArray( array, number ) {
+  if (posArray = array.filter(number => number > 0)) {
+    return posArray;
   }
-    return emptyArray;
+  else if (array.filter(number => number > 0)){
+    return array.length = 0;
+  }
 }
 
-console.log( 'Test - expect empty array:', newArray([-1, -3, -2, 4, 6, 55]));
-
+console.log( 'Test - Expect empty array:', inputArray([-21, 7, -2, 3, 11,]));
+console.log( 'Test - Expect empty array:', inputArray([-21, -7, -3, -2,]));
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
 //     here in a comment, write the function, and test it!
