@@ -102,6 +102,7 @@ if (letter === string.charAt(0)) {
 }
   return false;
 }
+console.log( 'Stretch Question 8' );
 console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
 console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 
@@ -115,6 +116,7 @@ for (let i = 0; i < array.length; i++) {
   return sum;
 }
 
+console.log( 'Stretch Question 9' );
 console.log ( 'Test - Sum of array should = 31:', sumAll([ 3, 7, 21 ]));
 
 // 10. Function to return a new array of all positive (greater than zero)
@@ -129,9 +131,25 @@ function inputArray( array, number ) {
   }
 }
 
-console.log( 'Test - Expect empty array:', inputArray([-21, 7, -2, 3, 11,]));
+console.log( 'Stretch Question 10' );
+console.log( 'Test - Expect 7, 3 and 11:', inputArray([-21, 7, -2, 3, 11,]));
 console.log( 'Test - Expect empty array:', inputArray([-21, -7, -3, -2,]));
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
 //     here in a comment, write the function, and test it!
-//
+//DIRECTIONS: Create a function which returns the number of true values there are in an array.
+
+
+function countTrue(array) {
+	 let valueCount = 0;
+for(let i = 0; i < array.length; ++i){
+    if(array[i] == true)
+        valueCount++;
+}
+	return valueCount;
+}
+
+console.log( 'Stretch Question 11' );
+console.log( 'Test - Expect 2:', countTrue([true, false, false, true, false]));
+console.log( 'Test - Expect 0:', countTrue([false, false, false, false]));
+console.log( 'Test (empty array)- Expect 0:', countTrue([]));
