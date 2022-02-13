@@ -48,7 +48,7 @@ console.log( 'Test - (Multiplying three numbers) 3 x 7 x 21 =', multiplyThree( 3
 // 5. Function that will return true if a number is positive,
 //    or greater than zero, and false otherwise
 function isPositive( number ) {
-  if ( number > 0 ){
+  if (number > 0){
     return true;
   }
     return false;
